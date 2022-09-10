@@ -150,7 +150,7 @@ public class Basics {
         String[] splitted = to_split.split(" ");
 
         for (int i = 0; i < 7; i++) {
-            ret.append(splitted[i]);
+            ret.append(splitted[i].charAt(0));
         }
 
         return ret.toString();
@@ -180,7 +180,7 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
         for (int i = 1; i < arr.length; i += 2) {
-            current_sum += i;
+            current_sum += arr[i];
         }
 
         return current_sum;
